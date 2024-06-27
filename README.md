@@ -36,7 +36,7 @@ Method of ingestion: The data is ingested into Azure using Azure Data Factory (A
   &nbsp;&nbsp;Notebook: The transformation logic is implemented in a Databricks notebook, which is available in the Bronze to Silver Notebook.</br>
 . Silver to Gold Transformation:</br>
   &nbsp;&nbsp;Objective: Apply further transformations to the data in the silver container to create a refined dataset.</br>
-  &nbsp;&nbsp;Process: The data from the silver container is read, additional transformations are applied, and the final dataset is written to the gold &nbsp;&nbsp; container.</br>
+  &nbsp;&nbsp;Process: The data from the silver container is read, additional transformations are applied, and the final dataset is written to the gold container.</br>
   &nbsp;&nbsp;Notebook: The transformation logic is implemented in a Databricks notebook, which is available in the Silver to Gold Notebook.</br> 
 . Integrating Notebooks with Azure Data Factory:</br>
   &nbsp;&nbsp;The Databricks notebooks are integrated into the Azure Data Factory pipeline created in the Data Ingestion part.</br>
