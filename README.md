@@ -31,7 +31,7 @@ Method of ingestion: The data is ingested into Azure using Azure Data Factory (A
 . In Azure Data Lake Storage, create two additional containers: silver and gold.</br>
 . <b>Mount Azure Data Lake Storage to Databricks</b> to access the data stored in the bronze, silver, and gold containers.</br>
 . Bronze to Silver Transformation:</br>
-  "\t"Objective: Apply initial transformations to the raw data loaded into the bronze container.</br>
+  &nbsp;Objective: Apply initial transformations to the raw data loaded into the bronze container.</br>
   \tProcess: The data from the bronze container is read, transformed, and then written to the silver container.</br>
   \tNotebook: The transformation logic is implemented in a Databricks notebook, which is available in the Bronze to Silver Notebook.</br>
 . Silver to Gold Transformation:</br>
