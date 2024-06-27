@@ -19,3 +19,7 @@ After installation, you need to install SQL Server Management Studio or SSMS. SO
 link:https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
 ### Database samples
 Link:https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files
+## Challenges
+During the project, I faced challenges with access management, specifically with Azure Role-Based Access Control (RBAC). Properly configuring RBAC to ensure the right permissions and access levels was critical but sometimes complex.
+
+For more information on Azure RBAC, refer https://learn.microsoft.com/en-us/azure/role-based-access-control/overview.
