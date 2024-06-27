@@ -44,12 +44,12 @@ Method of ingestion: The data is ingested into Azure using Azure Data Factory (A
 . Create a serverless SQL database in Azure Synapse Analytics\
 . Configure a connection between Azure Data Lake and Synapse Analytics to ensure that data updates in the Data Lake are reflected in the serverless SQL database.\
 . Create a synapse pipeline to load data from gold container into the serverless SQL DB, creating views in the serverless SQL DB.\
-. The stored procedure script is available in the StoredProcedure script. \
+. The stored procedure script is available in the StoredProcedure script.
 ### Reporting
 . Connect Power BI to the serverless SQL database in Azure Synapse Analytics to enable data visualization and reporting.\
-. Use the imported data in Power BI to create dashboards and reports. \
+. Use the imported data in Power BI to create dashboards and reports.
 ### End-to-End Pipeline Testing
-A Trigger was implemented in Databricks to automate the execution of the data pipeline. Upon triggering, the pipeline successfully detected and processed new data inserted into the on-premise SQL database. \ This updated data was seamlessly loaded into the serverless SQL database in Azure Synapse Analytics. The updated data in the serverless database automatically refreshed Power BI analytics, ensuring real-time insights and accurate analysis.
+A Trigger was implemented in Databricks to automate the execution of the data pipeline. Upon triggering, the pipeline successfully detected and processed new data inserted into the on-premise SQL database.</br>This updated data was seamlessly loaded into the serverless SQL database in Azure Synapse Analytics. The updated data in the serverless database automatically refreshed Power BI analytics, ensuring real-time insights and accurate analysis.
 ## Challenges
 During the project, I faced challenges with access management, specifically with Azure Role-Based Access Control (RBAC). Properly configuring RBAC to ensure the right permissions and access levels was critical but sometimes complex.
 
