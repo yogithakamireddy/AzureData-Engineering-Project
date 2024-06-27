@@ -21,7 +21,7 @@ link:https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-s
 Link:https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files
 ## Data Pipeline Details
 ### Data Ingestion
-Source of the data: The data is sourced from an on-premises SQL Server database.
+<b>Source of the data:</b> The data is sourced from an on-premises SQL Server database.
 Method of ingestion: The data is ingested into Azure using Azure Data Factory (ADF). The following steps outline the process:
 1. Install Integration Runtime: Install a self-hosted integration runtime (SHIR) to securely connect the on-premises SQL Server database to Azure Data Factory.
 2. Create Linked Services: Linked services define the connection to the data source (on-premises SQL Server) and the data destination (Azure Data Lake).
