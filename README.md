@@ -15,7 +15,7 @@ The use case for this project is building an end to end solution by ingesting th
 9. Python 
 ## Setup and Installation
 To install Microsoft SQL server download .exe file from :https://www.microsoft.com/en-in/sql-server/sql-server-downloads
-After installation, you need to install SQL Server Management Studio or SSMS. SO download it from the following 
+After installation, you need to install SQL Server Management Studio or SSMS download it from the following 
 link:https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
 ### Database samples
 Link:https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files
