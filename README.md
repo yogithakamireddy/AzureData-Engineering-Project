@@ -31,15 +31,15 @@ Method of ingestion: The data is ingested into Azure using Azure Data Factory (A
 . In Azure Data Lake Storage, create two additional containers: silver and gold.</br>
 . <b>Mount Azure Data Lake Storage to Databricks</b> to access the data stored in the bronze, silver, and gold containers.</br>
 . Bronze to Silver Transformation:</br>
-  &nbsp;Objective: Apply initial transformations to the raw data loaded into the bronze container.</br>
-  \tProcess: The data from the bronze container is read, transformed, and then written to the silver container.</br>
-  \tNotebook: The transformation logic is implemented in a Databricks notebook, which is available in the Bronze to Silver Notebook.</br>
+  &nbsp;&nbsp;Objective: Apply initial transformations to the raw data loaded into the bronze container.</br>
+  &nbsp;&nbsp;Process: The data from the bronze container is read, transformed, and then written to the silver container.</br>
+  &nbsp;&nbsp;Notebook: The transformation logic is implemented in a Databricks notebook, which is available in the Bronze to Silver Notebook.</br>
 . Silver to Gold Transformation:</br>
-  \tObjective: Apply further transformations to the data in the silver container to create a refined dataset.</br>
-  \tProcess: The data from the silver container is read, additional transformations are applied, and the final dataset is written to the gold container.</br>
-  \tNotebook: The transformation logic is implemented in a Databricks notebook, which is available in the Silver to Gold Notebook.</br> 
+  &nbsp;&nbsp;Objective: Apply further transformations to the data in the silver container to create a refined dataset.</br>
+  &nbsp;&nbsp;Process: The data from the silver container is read, additional transformations are applied, and the final dataset is written to the gold container.</br>
+  &nbsp;&nbsp;Notebook: The transformation logic is implemented in a Databricks notebook, which is available in the Silver to Gold Notebook.</br> 
 . Integrating Notebooks with Azure Data Factory:</br>
-  \tThe Databricks notebooks are integrated into the Azure Data Factory pipeline created in the Data Ingestion part.</br>
+  &nbsp;&nbsp;The Databricks notebooks are integrated into the Azure Data Factory pipeline created in the Data Ingestion part.</br>
 ### Data Loading
 . Create a serverless SQL database in Azure Synapse Analytics\
 . Configure a connection between Azure Data Lake and Synapse Analytics to ensure that data updates in the Data Lake are reflected in the serverless SQL database.\
