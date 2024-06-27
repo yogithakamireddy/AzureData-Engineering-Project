@@ -21,7 +21,7 @@ link:https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-s
 Link:https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files
 ## Data Pipeline Details
 ### Data Ingestion
-<b>Source of the data:</b> The data is sourced from an on-premises SQL Server database.
+<b>Data Source:</b> The data is sourced from an on-premises SQL Server database.
 Method of ingestion: The data is ingested into Azure using Azure Data Factory (ADF). The following steps outline the process:
 1. Install Integration Runtime: Install a self-hosted integration runtime (SHIR) to securely connect the on-premises SQL Server database to Azure Data Factory.
 2. Create Linked Services: Linked services define the connection to the data source (on-premises SQL Server) and the data destination (Azure Data Lake).
@@ -29,7 +29,7 @@ Method of ingestion: The data is ingested into Azure using Azure Data Factory (A
 4. Create pipeline : The pipeline consists of a linked service to the SQL Server, a linked service to Azure Data Lake, datasets for both the source and destination, and a copy activity that defines the data movement.
 ### Data Transformation
 . In Azure Data Lake Storage, create two additional containers: silver and gold.</br>
-. Mount Azure Data Lake Storage to Databricks to access the data stored in the bronze, silver, and gold containers.</br>
+. <b>Mount Azure Data Lake Storage to Databricks</b> to access the data stored in the bronze, silver, and gold containers.</br>
 . Bronze to Silver Transformation:</br>
   Objective: Apply initial transformations to the raw data loaded into the bronze container.</br>
   Process: The data from the bronze container is read, transformed, and then written to the silver container.</br>
@@ -41,8 +41,15 @@ Method of ingestion: The data is ingested into Azure using Azure Data Factory (A
 . Integrating Notebooks with Azure Data Factory:</br>
   The Databricks notebooks are integrated into the Azure Data Factory pipeline created in the Data Ingestion part.</br>
 ### Data Loading
+. Create a serverless SQL database in Azure Synapse Analytics/
+. Configure a connection between Azure Data Lake and Synapse Analytics to ensure that data updates in the Data Lake are reflected in the serverless SQL database./
+. Create a synapse pipeline to load data from gold container into the serverless SQL DB, creating views in the serverless SQL DB./
+. The stored procedure script is available in the StoredProcedure script./
 ### Reporting
+. Connect Power BI to the serverless SQL database in Azure Synapse Analytics to enable data visualization and reporting./
+. Use the imported data in Power BI to create dashboards and reports./
 ### End-to-End Pipeline Testing
+A Trigger was implemented in Databricks to automate the execution of the data pipeline. Upon triggering, the pipeline successfully detected and processed new data inserted into the on-premise SQL database./ This updated data was seamlessly loaded into the serverless SQL database in Azure Synapse Analytics. The updated data in the serverless database automatically refreshed Power BI analytics, ensuring real-time insights and accurate analysis.
 ## Challenges
 During the project, I faced challenges with access management, specifically with Azure Role-Based Access Control (RBAC). Properly configuring RBAC to ensure the right permissions and access levels was critical but sometimes complex.
 
