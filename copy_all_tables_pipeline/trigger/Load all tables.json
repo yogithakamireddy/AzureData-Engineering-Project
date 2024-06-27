@@ -1,0 +1,32 @@
+{
+    "name": "Load all tables",
+    "properties": {
+        "annotations": [],
+        "runtimeState": "Started",
+        "pipelines": [
+            {
+                "pipelineReference": {
+                    "referenceName": "copy_all_tables",
+                    "type": "PipelineReference"
+                }
+            }
+        ],
+        "type": "ScheduleTrigger",
+        "typeProperties": {
+            "recurrence": {
+                "frequency": "Day",
+                "interval": 1,
+                "startTime": "2024-06-25T23:32:00",
+                "timeZone": "Central Standard Time",
+                "schedule": {
+                    "minutes": [
+                        40
+                    ],
+                    "hours": [
+                        23
+                    ]
+                }
+            }
+        }
+    }
+}

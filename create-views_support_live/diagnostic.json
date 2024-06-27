@@ -1,0 +1,22 @@
+{
+    "now": "2024-06-27T15:23:34.891Z",
+    "perfNow": 277193.39999997616,
+    "diagnosticCorrelation": "1e540213-8b8f-4b2a-9100-f62ef7bdc0a4",
+    "source": "DownloadSupportFiles",
+    "environment": {
+        "productName": "a365",
+        "buildVersion": "24.0526.01",
+        "environmentType": 9,
+        "resourceName": "azureklysynapseworkspace",
+        "resourceRegion": "centralus",
+        "resourceGroup": "Data_Engineering_Project",
+        "subscriptionId": "a5a179b4-a695-48e4-ac3f-096caa90301c",
+        "sessionId": "rorhZ",
+        "operationId": "Rw9Fj",
+        "gitType": "live"
+    },
+    "additionalInfo": {
+        "selectedResource": "create-views",
+        "selectedResourceType": "pipeline"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "AzureDatabricks1",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "description": "To link Datafactory and databricks to include notebooks in pipeline",
+        "annotations": [],
+        "type": "AzureDatabricks",
+        "typeProperties": {
+            "domain": "https://adb-1076939643099303.3.azuredatabricks.net",
+            "accessToken": {
+                "type": "AzureKeyVaultSecret",
+                "store": {
+                    "referenceName": "AzureKeyVault1",
+                    "type": "LinkedServiceReference"
+                },
+                "secretName": "DatabricksToken"
+            },
+            "existingClusterId": "0623-042047-wee38ari"
+        }
+    }
+}

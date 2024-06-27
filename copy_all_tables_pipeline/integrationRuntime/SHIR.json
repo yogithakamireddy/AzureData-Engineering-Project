@@ -1,0 +1,7 @@
+{
+    "name": "SHIR",
+    "properties": {
+        "type": "SelfHosted",
+        "description": "Self hosted integration runtime used to connect on premise SQL server"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "azureklysynapseworkspace-WorkspaceDefaultStorage",
+    "type": "Microsoft.Synapse/workspaces/linkedservices",
+    "properties": {
+        "typeProperties": {
+            "url": "https://klydatalake.dfs.core.windows.net"
+        },
+        "type": "AzureBlobFS",
+        "connectVia": {
+            "referenceName": "AutoResolveIntegrationRuntime",
+            "type": "IntegrationRuntimeReference"
+        },
+        "annotations": []
+    }
+}

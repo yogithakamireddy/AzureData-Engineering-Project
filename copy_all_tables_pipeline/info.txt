@@ -1,0 +1,6 @@
+selected resource name:		copy_all_tables
+selected resource type:		pipeline
+factory name:			KLY-DataFactory
+factory location:		centralus
+subscription id:		a5a179b4-a695-48e4-ac3f-096caa90301c
+time of download (UTC):		Thu, 27 Jun 2024 14:39:07 GMT
